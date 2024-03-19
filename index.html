@@ -5,49 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
-    <link rel="inco" type="image/x-icon" href="/imagens/fivelupa.png">
 
-    <title>Encriptado One challenge</title>
+
+    <title>Encriptador One challenge</title>
 </head>
 <body>
     <header>
         <img class="logo-alura" src="imagens/aluraoracle.png" alt="logo-alura">
     </header>
+    
     <main>
         <section class="secao1">
             <div class="localTexto1">
-                <textarea placeholder="Digite seu texto aqui" class="caixaDoTexto"></textarea>
-          
+                <textarea id="textoOriginal" placeholder="Digite seu texto aqui" class="caixaDoTexto"></textarea>
 
-            </div>
-           </Section>
+           </div>
+            
             <div class="alerta-img">
                 <img src="/imagens/alerta.png" alt="image-alerta">
                 <p>Só letras mínusculas sem acento!</p>
             </div>
+            
             <div class="botoes">
-                <input type="button" class="btn-criptografar" value="Criptografar">
-                <input type="button" class="btn-descriptografar" value="Descriptografar">
+                <input type="button" id="btnCriptografar" class="btn-criptografar" value="Criptografar">
+                <input type="button" id="btnDescriptografar" class="btn-descriptografar" value="Descriptografar">
             </div>
+           
         </section>
+        
+
         <section class="secao2">
-            <div class="localLupa">
+            <div class="menino-lupa">
                 <img src="imagens/lupa.jpg" alt=" menino-com-lupa">
             </div>
+
             <div class="local-paragrafo">
                 <h3>Nenhuma mensagem encontrada</h3>
-                <p>Digite um texto que você <br> deseja criptografar ou
+                <p>Digite o texto que você <br> deseja criptografar ou
                     descriptografar.</p>
             </div>
+
             <div class="local-copiar">
-                <input type="button" class="btn-copiar" value="Copiar">
+                <button id="btnCopiar" class="btn-copiar">Copiar</button>
             </div>
+            
+
             <div class="local-resultado">
-                <p class="resultado-texto"></p>
+                <p id="textoCriptografado" class="resultado-texto"></p>
             </div>
+            
 
         </section>
     </main>
-    <script src="scr"></script>
+        <script src="script.js"></script>
 </body>
 </html>
